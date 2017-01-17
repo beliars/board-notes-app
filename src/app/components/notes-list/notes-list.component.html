@@ -1,0 +1,3 @@
+<div class="notes-list clearfix" *ngIf="notesList.length">
+    <note-item *ngFor="let note of notesList" (onDeleteNote)="onDeleteNote($event)" [noteItem]="note"></note-item>
+</div>

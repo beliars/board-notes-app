@@ -1,0 +1,9 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss";
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+	background-color: #dcdcdc;
+	font-family: 'Open Sans', sans-serif;
+	color: #605c5c;
+}

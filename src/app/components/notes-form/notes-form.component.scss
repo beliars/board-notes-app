@@ -1,0 +1,46 @@
+notes-form {
+  
+   form {
+       width: 70%;
+       margin: 0 auto;
+
+       textarea.form-control {
+           resize: none;
+           border: none;
+           -webkit-box-shadow: 0px 1px 5px 0px rgba(99,96,99,1);
+	        -moz-box-shadow: 0px 1px 5px 0px rgba(99,96,99,1);
+	        box-shadow: 0px 1px 5px 0px rgba(99,96,99,1);
+
+            &:focus {
+                outline: none;
+                -webkit-box-shadow: 0px 1px 8px 0px rgba(99,96,99,1);
+	            -moz-box-shadow: 0px 1px 8px 0px rgba(99,96,99,1);
+                box-shadow: 0px 1px 8px 0px rgba(99,96,99,1);
+            } 
+       }
+
+       label {
+           color: #009688;
+       }
+
+       .btn-wrapper {
+           text-align: right;
+           
+           button.btn {
+                color: #605c5c;
+                border-radius: 28px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:active {
+                    position: relative;
+                    top: 1px;
+                    outline: none;
+                }
+            }
+       }
+       
+   } 
+}

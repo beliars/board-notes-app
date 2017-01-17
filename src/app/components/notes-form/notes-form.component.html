@@ -1,0 +1,10 @@
+<form #notesForm="ngForm" (ngSubmit)="onSubmit($event, notesForm)">
+	<div class="form-group">
+		<label for="note">Enter note text</label>
+        <textarea class="form-control" name="noteText" id="note" rows="5" cols="3" placeholder="Enter Your note here..."
+		[(ngModel)]="newNote.text" required></textarea>
+	</div>
+	<div class="btn-wrapper">
+		<button type="submit" class="btn btn-default" [disabled]="notesForm.invalid">Add note</button>
+	</div>
+</form>
