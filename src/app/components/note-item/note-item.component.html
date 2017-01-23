@@ -1,4 +1,4 @@
-<div class="note-item">
+<div class="note-item" notesGridDirective>
     <p>{{ noteItem.text }}</p>
-    <span class="delete-note" (click)="deleteNote(noteItem)">&times;</span>
+    <span class="delete-note" #item (click)="deleteNote(noteItem)">&times;</span>
 </div>

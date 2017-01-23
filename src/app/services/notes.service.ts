@@ -21,8 +21,11 @@ export class NotesService {
     }
 
     addNote(noteText) {
-        let newId = (_.maxBy(this.getNotes(), 'id')).id + 1;
-        console.log(newId);
+        let newId = 0;
+        if(this.getNotes().length) {
+            newId = (_.maxBy(this.notes, 'id')).id + 1;
+        }
+        else newId = 1;
         let newNote = {
             id: newId,
             text: noteText

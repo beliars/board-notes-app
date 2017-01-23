@@ -22,8 +22,6 @@ export class NotesFormComponent {
 	onSubmit(event, form) {
 		event.preventDefault();
 		if(form.valid) {
-			console.log(form);
-			console.log(this.newNote.text);
 			this.addNote.emit(this.newNote.text);
 			form.reset();
 		}

@@ -30,7 +30,6 @@ export class NotesComponent implements OnInit {
 	}
 
 	onDeleteNote(noteItem) {
-		console.log(noteItem);
 		this.notesService.deleteNote(noteItem);
 		this.getNotesList();
 	}

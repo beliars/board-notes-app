@@ -3,9 +3,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Note } from '../../shared/note.model';
 
 import './notes-list.component.scss';
-
-import * as masonry from 'masonry-layout';
-
 @Component({
 	selector: 'notes-list',
 	template: require('./notes-list.component.html')
@@ -14,7 +11,6 @@ import * as masonry from 'masonry-layout';
 export class NotesListComponent {
 	@Input() notesList: Note[];
 	@Output() onDeleteNoteItem;
-
 	constructor() {
 		this.onDeleteNoteItem = new EventEmitter();
 	}

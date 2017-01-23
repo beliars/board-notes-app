@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { Note } from '../../shared/note.model';
 
+
 import './note-item.component.scss';
 @Component({
     selector: 'note-item',
@@ -10,11 +11,12 @@ import './note-item.component.scss';
 export class NoteItemComponent {
     @Input() noteItem: Note;
     @Output() onDeleteNote;
+
     constructor() {
         this.onDeleteNote = new EventEmitter();
-     }
+    }
 
-     deleteNote(noteItem) {
-         this.onDeleteNote.emit(noteItem);
-     }
+    deleteNote(noteItem) {
+        this.onDeleteNote.emit(noteItem);
+    }
 }

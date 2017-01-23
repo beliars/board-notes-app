@@ -9,6 +9,7 @@ import { NotesComponent } from './components/notes/notes.component';
 import { NotesFormComponent } from './components/notes-form/notes-form.component';
 import { NotesListComponent } from './components/notes-list/notes-list.component';
 import { NoteItemComponent } from './components/note-item/note-item.component';
+import { NotesGridDirective } from './directives/notes-grid.directive';
 
 @NgModule({
     imports: [
@@ -22,7 +23,8 @@ import { NoteItemComponent } from './components/note-item/note-item.component';
         NotesComponent,
         NotesFormComponent,
         NotesListComponent,
-        NoteItemComponent
+        NoteItemComponent,
+        NotesGridDirective
     ],
     providers: [NotesService],
     bootstrap: [RootComponent]
